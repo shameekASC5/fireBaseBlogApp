@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blogs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style1.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDbAXk6r-GA7c0oSceBLhvw6h6xUF7Ivc0",
+        authDomain: "blog-32809.firebaseapp.com",
+        databaseURL: "https://blog-32809.firebaseio.com",
+        projectId: "blog-32809",
+        storageBucket: "",
+        messagingSenderId: "382491347691"
+    };
+    firebase.initializeApp(config);
+    </script>
+        <script src="main1.js" defer></script>
+
+</head>
+<body>
+    <center>
+        <h1>Blogs</h1>
+    </center>
+    <form action = "createBlog.html" id = "button_container"> 
+        <button id = "newBlogPost" type = "submit">New Post</button>
+    </form>
+    <div id = "main_div">
+    </div>
+</body>
+</html>

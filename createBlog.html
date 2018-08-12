@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDbAXk6r-GA7c0oSceBLhvw6h6xUF7Ivc0",
+        authDomain: "blog-32809.firebaseapp.com",
+        databaseURL: "https://blog-32809.firebaseio.com",
+        projectId: "blog-32809",
+        storageBucket: "",
+        messagingSenderId: "382491347691"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id = "main_container">
+        <center>
+            <h1>New Post</h1>
+        </center>
+        <div id = "img_headers">
+
+            <div id = "image_container"> 
+                <img id = "user_image" src = "https://www.authenticateis.com/wp-content/uploads/2018/02/blank-headshot.jpeg">
+            </div>
+            
+            <div id = "name_stuff">
+                <textarea class = "blog_title" placeholder="Blog Title" required></textarea>
+            <br>
+                <textarea class = "author_name" placeholder="Your Name Here" required></textarea>
+            </div>
+
+            <div id = "submitButtonContainer">
+                <form action = "index.html">
+                    <input id ="submit_button" type = "button" value ="Submit" onclick="self.location='index.html'">
+                </form>
+            </div>
+
+        </div>
+            <div id = "text_boxContainer">
+                <textarea class = "text_box" required></textarea>
+            </div>        
+    </div>    
+</body>
+</html>
